@@ -8,4 +8,5 @@ function madLib() {
     var actionVerb = document.getElementById('action-verb').value;
     console.log(adjective, place, noun1, noun2, verb, actionVerb)
     //display the value 
+    
 }
