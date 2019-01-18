@@ -1,6 +1,28 @@
 body {
     background-color: dodgerblue
 }
-li {
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    
+}
+th {
     margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+input {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    border: 10px solid black;
+}
+.input-box {
+    
+
+}
+table {
+    table-layout: fixed
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+
 }
