@@ -8,94 +8,100 @@
     <link rel="stylesheet" href="styling.css">
 </head>
 <body>
+    <header>
     <h1>Madlibs Polical Speech</h1>
-<table>
-    <thead></thead>
-    <tbody>
-        <tr>
-            <th>Adjective</th>
-            <th class="input-box"><input id="adjective-1"></th></th>
-        </tr>
-        <tr>
-            <th>Adjective</th>
-            <th class="input-box"><input id="adjective-2"></th>
-        </tr>
-        <tr>
-            <th>Plural Noun</th>
-            <th class="input-box"> <input id="plural-noun-1"></th>
-        </tr>
-        <tr>
-            <th>Plural Noun</th>
-            <th class="input-box"> <input id="plural-noun-2"></th>
-        </tr>
-        <tr>
-            <th>Adjective</th>
-            <th class="input-box"><input id="adjective-3"></th>
-        </tr>
-        <tr>
-            <th>Noun</th>
-            <th class="input-box"><input id="noun-1"></th>
-        </tr>
-        <tr>
-            <th>Noun</th>
-            <th class="input-box"><input id="noun-2"></th>
-        </tr>
-        <tr>
-            <th>Plural Noun</th>
-            <th class="input-box"><input id="plural-noun-3"></th>
-        </tr>
-        <tr>
-            <th>Adjective</th>
-            <th class="input-box"><input id="adjective-4"></th>
-        </tr>
-        <tr>
-            <th>Person in Room (Male)</th>
-            <th class="input-box"><input id="person-in-room"></th>
-        </tr>
-        <tr>
-            <th>Adjective</th>
-            <th class="input-box"><input id="adjective-5"></th>
-        </tr>
-        <tr>
-            <th>Noun</th>
-            <th class="input-box"><input id="noun-3"></th>
-        </tr>
-        <tr>
-            <th>Adjective</th>
-            <th class="input-box"><input id="adjective-6"></th>
-        </tr>
-        <tr>
-            <th>Noun</th>
-            <th class="input-box"><input id="noun-4"></th>
-        </tr>
-        <tr>
-            <th>Plural Noun</th>
-            <th class="input-box"><input id="plural-noun-4"></th>
-        </tr>
-        <tr>
-            <th>Plural Noun</th>
-            <th class="input-box"><input id="plural-noun-5"></th>
-        </tr>
-        <tr>
-            <th>Adjective</th>
-            <th class="input-box"><input id="adjective-7"></th>
-        </tr>
-        <tr>
-            <th>Adjective</th>
-            <th class="input-box"><input id="adjective-8"></th>
-        </tr>
-        <tr>
-            <th>Adjective</th>
-            <th class="input-box"><input id="adjective-9"></th>
-        </tr>
-        <tr>
-            <th><button onclick="madLib()">MadLib!</button></th>
-            <th></th>
-        </tr>
-    </tbody>
-</table>
-<p id="madlib-body"></p>
-
+    </header>
+<main>
+    <table>
+        <tbody>
+            <tr>
+                <th>Adjective</th>
+                <th class="input-box"><input id="adjective-1"></th></th>
+            </tr>
+            <tr>
+                <th>Adjective</th>
+                <th class="input-box"><input id="adjective-2"></th>
+            </tr>
+            <tr>
+                <th>Plural Noun</th>
+                <th class="input-box"> <input id="plural-noun-1"></th>
+            </tr>
+            <tr>
+                <th>Plural Noun</th>
+                <th class="input-box"> <input id="plural-noun-2"></th>
+            </tr>
+            <tr>
+                <th>Adjective</th>
+                <th class="input-box"><input id="adjective-3"></th>
+            </tr>
+            <tr>
+                <th>Noun</th>
+                <th class="input-box"><input id="noun-1"></th>
+            </tr>
+            <tr>
+                <th>Noun</th>
+                <th class="input-box"><input id="noun-2"></th>
+            </tr>
+            <tr>
+                <th>Plural Noun</th>
+                <th class="input-box"><input id="plural-noun-3"></th>
+            </tr>
+            <tr>
+                <th>Adjective</th>
+                <th class="input-box"><input id="adjective-4"></th>
+            </tr>
+            <tr>
+                <th>Person in Room (Male)</th>
+                <th class="input-box"><input id="person-in-room"></th>
+            </tr>
+            <tr>
+                <th>Adjective</th>
+                <th class="input-box"><input id="adjective-5"></th>
+            </tr>
+            <tr>
+                <th>Noun</th>
+                <th class="input-box"><input id="noun-3"></th>
+            </tr>
+            <tr>
+                <th>Adjective</th>
+                <th class="input-box"><input id="adjective-6"></th>
+            </tr>
+            <tr>
+                <th>Noun</th>
+                <th class="input-box"><input id="noun-4"></th>
+            </tr>
+            <tr>
+                <th>Plural Noun</th>
+                <th class="input-box"><input id="plural-noun-4"></th>
+            </tr>
+            <tr>
+                <th>Plural Noun</th>
+                <th class="input-box"><input id="plural-noun-5"></th>
+            </tr>
+            <tr>
+                <th>Adjective</th>
+                <th class="input-box"><input id="adjective-7"></th>
+            </tr>
+            <tr>
+                <th>Adjective</th>
+                <th class="input-box"><input id="adjective-8"></th>
+            </tr>
+            <tr>
+                <th>Adjective</th>
+                <th class="input-box"><input id="adjective-9"></th>
+            </tr>
+            <tr>
+                <th><button onclick="madLib()">MadLib!</button></th>
+                <th></th>
+            </tr>
+        </tbody>
+    </table>
+</main>
+<aside>
+<p id="madlib-body">
+    Ladies and gentlemen, on this <br><label>adjective </label> occasion it is a privelage to address such a/an <br><label>adjective</label> looking group of <br><label>plural noun</label>. I can tell from your smiling <br><label>plural noun</label> that you will support my <br><label>adjective</label> program in the coming election. I promise that, if elected, there will be a/an <br><label>noun</label> in every <br><label>noun</label> and two <br><label>plural noun</label> in every garage. I want to warn you about my <br><label>adjective</label> opponent, Mr. <br><label>person in room (male)</label>. The man is nothing but a/an <br><label>adjective <br>noun</label>. He has a <br><label>adjective</label> character and is working <label>noun</label> in glove with the criminal element. If elected I promise to eliminate vice. I will keep the <label>plural noun</label> off the city streets. I will keep the crooks from dipping their <label>plural noun</label> in the public till. I promise you <label>adjective</label> government, <label>adjective</label> taxes, and <label>adjective</label> schools.
+</p>
+</aside>
 
 <!-- create GO button -->
 <script src="main.js"></script>

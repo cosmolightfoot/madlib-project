@@ -23,7 +23,6 @@ function madLib() {
     //display the value 
     
     var madLibBody = 'Ladies and gentlemen, on this ' + adjective1 + ' occasion it is a privelage to address such a/an ' + adjective2 + ' looking group of ' + pluralNoun1 + '. I can tell from your smiling ' + pluralNoun2 + ' that you will support my ' + adjective3 + ' program in the coming election. I promise that, if elected, there will be a/an ' + noun1 + ' in every ' + noun2 + ' and two ' + pluralNoun3 + ' in every garage. I want to warn you about my ' + adjective4 + ' opponent, Mr. ' + personInRoom + '. The man is nothing but a/an ' + adjective5 + ' ' + noun3 + '. He has a ' + adjective6 + ' character and is working ' + noun4 + ' in glove with the criminal element. If elected I promise to eliminate vice. I will keep the ' + pluralNoun4 + ' off the city streets. I will keep the crooks from dipping their ' + pluralNoun5 + ' in the public till. I promise you ' + adjective7 + ' government, ' + adjective8 + ' taxes, and ' + adjective9 + ' schools.';
-
     var displayMadLib = document.getElementById('madlib-body');
     displayMadLib.textContent = madLibBody;
 }
