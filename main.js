@@ -29,6 +29,11 @@ function madLib() {
 }
 var allAdjectives = ['alpha', 'bravo', 'charlie', 'delta', ' enigma'];
 
+var allPluralNouns = ['plural', 'nouns'];
+
+var allNouns = ['nouns']
+
+var allNames = ['Charlie', 'Jacob', 'Donald']
 
 function randomizer() {
     var adjectiveSelector1 = Math.floor(Math.random() * 100);
