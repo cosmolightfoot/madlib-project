@@ -1,8 +1,9 @@
 body {
-    background-color: dodgerblue
+    background-color: floralwhite
 }
 h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
     font-weight: 200;
     border: 3px solid purple;
     width: 729px;
@@ -18,7 +19,7 @@ th {
 input {
     display: block;
     font-family: 'Courier New', Courier, monospace;
-    border: 5px solid black;
+    border: 3px solid black;
 }
 .input-box {
     
@@ -34,19 +35,21 @@ table {
 
 }
 button {
-    width: 150px;
+    width: 120px;
     height: 45px;
     margin: 10px;
     border: 5px solid black;
     font-weight: bold;
     font-family: 'courier new';
 }
+.button-row {
+}
 #madlib-body {
     position: relative;
     left: 370px;
-    top: -583px;
+    top: -507px;
     width:360px;
-    height: 553px;
+    height: 477px;
     border: 3px solid purple;
     font-family: 'Courier New', Courier, monospace;
     font-stretch: expanded
