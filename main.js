@@ -27,16 +27,9 @@ function madLib() {
     var displayMadLib = document.getElementById('madlib-body');
     displayMadLib.textContent = madLibBody;
 }
-var allAdjectives = ['alpha', 'bravo', 'charlie', 'delta', ' enigma'];
-
-var allPluralNouns = ['plural', 'nouns'];
-
-var allNouns = ['nouns']
-
-var allNames = ['Charlie', 'Jacob', 'Donald']
 
 function randomizer() {
-    var adjectiveSelector1 = Math.floor(Math.random() * 100);
+    var adjectiveSelector1 = Math.floor(Math.random() * 403);
     var adjectiveSelector2 = Math.floor(Math.random() * 100);
     var adjectiveSelector3 = Math.floor(Math.random() * 100);
     var adjectiveSelector4 = Math.floor(Math.random() * 100);
@@ -57,7 +50,7 @@ function randomizer() {
     var personInRoomSelector = Math.floor(Math.random() * 100);
     
 
-    document.getElementById('adjective-1').value = allAdjectives[0];
+    document.getElementById('adjective-1').value = allAdjectives[adjectiveSelector1];
     document.getElementById('adjective-2').value = 'testing 123';
     document.getElementById('plural-noun-1').value = 'testing 123';
     document.getElementById('plural-noun-2').value = 'testing 123';
@@ -77,6 +70,7 @@ function randomizer() {
     document.getElementById('adjective-8').value = 'testing 123';
     document.getElementById('adjective-9').value = 'testing 123';
 }
-
+console.log(allAdjectives[3]);
+console.log(allAdjectives.length);
 //madLib();
 //randomizer();
