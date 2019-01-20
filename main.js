@@ -1,3 +1,4 @@
+
 function madLib() {
     //links string input to js variables
     var adjective1 = document.getElementById('adjective-1').value;
@@ -26,25 +27,51 @@ function madLib() {
     var displayMadLib = document.getElementById('madlib-body');
     displayMadLib.textContent = madLibBody;
 }
+var allAdjectives = ['alpha', 'bravo', 'charlie', 'delta', ' enigma'];
+
 
 function randomizer() {
-    document.getElementById('adjective-1').value = "testing 123"
-    document.getElementById('adjective-2').value = "testing 123"
-    document.getElementById('plural-noun-1').value = "testing 123"
-    document.getElementById('plural-noun-2').value = "testing 123"
-    document.getElementById('adjective-3').value = "testing 123"
-    document.getElementById('noun-1').value = "testing 123"
-    document.getElementById('noun-2').value = "testing 123"
-    document.getElementById('plural-noun-3').value = "testing 123"
-    document.getElementById('adjective-4').value = "testing 123"
-    document.getElementById('person-in-room').value = "testing 123"
-    document.getElementById('adjective-5').value = "testing 123"
-    document.getElementById('noun-3').value = "testing 123"
-    document.getElementById('adjective-6').value = "testing 123"
-    document.getElementById('noun-4').value = "testing 123"
-    document.getElementById('plural-noun-4').value = "testing 123"
-    document.getElementById('plural-noun-5').value = "testing 123"
-    document.getElementById('adjective-7').value = "testing 123"
-    document.getElementById('adjective-8').value = "testing 123"
-    document.getElementById('adjective-9').value = "testing 123"
+    var adjectiveSelector1 = Math.floor(Math.random() * 100);
+    var adjectiveSelector2 = Math.floor(Math.random() * 100);
+    var adjectiveSelector3 = Math.floor(Math.random() * 100);
+    var adjectiveSelector4 = Math.floor(Math.random() * 100);
+    var adjectiveSelector5 = Math.floor(Math.random() * 100);
+    var adjectiveSelector6 = Math.floor(Math.random() * 100);
+    var adjectiveSelector7 = Math.floor(Math.random() * 100);
+    var adjectiveSelector8 = Math.floor(Math.random() * 100);
+    var adjectiveSelector9 = Math.floor(Math.random() * 100);
+    var pluralNounSelector1= Math.floor(Math.random() * 100);
+    var pluralNounSelector2= Math.floor(Math.random() * 100);
+    var pluralNounSelector3 = Math.floor(Math.random() * 100);
+    var pluralNounSelector4 = Math.floor(Math.random() * 100);
+    var pluralNounSelector5 = Math.floor(Math.random() * 100);
+    var nounSelector1 = Math.floor(Math.random() * 100);
+    var nounSelector2 = Math.floor(Math.random() * 100);
+    var nounSelector3 = Math.floor(Math.random() * 100);
+    var nounSelector4 = Math.floor(Math.random() * 100);
+    var personInRoomSelector = Math.floor(Math.random() * 100);
+    
+
+    document.getElementById('adjective-1').value = allAdjectives[0];
+    document.getElementById('adjective-2').value = 'testing 123';
+    document.getElementById('plural-noun-1').value = 'testing 123';
+    document.getElementById('plural-noun-2').value = 'testing 123';
+    document.getElementById('adjective-3').value = 'testing 123';
+    document.getElementById('noun-1').value = 'testing 123';
+    document.getElementById('noun-2').value = 'testing 123';
+    document.getElementById('plural-noun-3').value = 'testing 123';
+    document.getElementById('adjective-4').value = 'testing 123';
+    document.getElementById('person-in-room').value = 'testing 123';
+    document.getElementById('adjective-5').value = 'testing 123';
+    document.getElementById('noun-3').value = 'testing 123';
+    document.getElementById('adjective-6').value = 'testing 123'
+    document.getElementById('noun-4').value = 'testing 123';
+    document.getElementById('plural-noun-4').value = 'testing 123';
+    document.getElementById('plural-noun-5').value = 'testing 123';
+    document.getElementById('adjective-7').value = 'testing 123';
+    document.getElementById('adjective-8').value = 'testing 123';
+    document.getElementById('adjective-9').value = 'testing 123';
 }
+
+//madLib();
+//randomizer();
