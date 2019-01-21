@@ -1,5 +1,7 @@
 
 function madLib() {
+    
+    
     //links string input to js variables
     var adjective1 = document.getElementById('adjective-1').value;
     var adjective2 = document.getElementById('adjective-2').value;
@@ -22,11 +24,14 @@ function madLib() {
     var personInRoom = document.getElementById('person-in-room').value;
     console.log(adjective1, adjective2, pluralNoun1, pluralNoun2, adjective3, noun1, noun2, pluralNoun3, adjective4, personInRoom, adjective5, noun3, adjective6, noun4, pluralNoun4, pluralNoun5, adjective7, adjective8, adjective9);
     
-    //creates madlib body once input fields are recognized
-    /*var madLibBody = 'Ladies and gentlemen, on this ' + adjective1 + ' occasion it is a privelage to address such a/an ' + adjective2 + ' looking group of ' + pluralNoun1 + '. I can tell from your smiling ' + pluralNoun2 + ' that you will support my ' + adjective3 + ' program in the coming election. I promise that, if elected, there will be a/an ' + noun1 + ' in every ' + noun2 + ' and two ' + pluralNoun3 + ' in every garage. I want to warn you about my ' + adjective4 + ' opponent, Mr. ' + personInRoom + '. The man is nothing but a/an ' + adjective5 + ' ' + noun3 + '. He has a ' + adjective6 + ' character and is working ' + noun4 + ' in glove with the criminal element. If elected I promise to eliminate vice. I will keep the ' + pluralNoun4 + ' off the city streets. I will keep the crooks from dipping their ' + pluralNoun5 + ' in the public till. I promise you ' + adjective7 + ' government, ' + adjective8 + ' taxes, and ' + adjective9 + ' schools.';
-    var displayMadLib = document.getElementById('madlib-body');
-    displayMadLib.textContent = madLibBody;*/
-console.log(noun3.value);
+    //sets up a condition where blank input fields trigger an error messsage rather than cue a blank form template
+    if(adjective1.length === 0 || adjective2.length === 0 || adjective3.length === 0 || adjective4.length === 0 || adjective5.length === 0 || adjective6.length === 0 || adjective7.length === 0 || adjective8.length === 0 || adjective9.length === 0 || pluralNoun1.length === 0 || pluralNoun2.length === 0 || pluralNoun3.length === 0 || pluralNoun4.length === 0 || pluralNoun5.length === 0 || noun1.length === 0 || noun2.length === 0 || noun3.length === 0 || noun4.length === 0 || personInRoom.length === 0) {
+    alert("ERROR!!! Please Fill Out the form to MAAAADLIIIIB!!!");
+    }
+
+    else {
+    
+    //sends string value to madlib body
     document.getElementById('word-1').innerHTML = adjective1;
     document.getElementById('word-2').innerHTML = adjective2;
     document.getElementById('word-3').innerHTML = pluralNoun1;
@@ -46,6 +51,7 @@ console.log(noun3.value);
     document.getElementById('word-17').innerHTML = adjective7;
     document.getElementById('word-18').innerHTML = adjective8;
     document.getElementById('word-19').innerHTML = adjective9;
+    }
 }
 //adds word randomizer functionality
 function randomizer() {
