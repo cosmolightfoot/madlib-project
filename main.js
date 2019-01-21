@@ -23,9 +23,29 @@ function madLib() {
     console.log(adjective1, adjective2, pluralNoun1, pluralNoun2, adjective3, noun1, noun2, pluralNoun3, adjective4, personInRoom, adjective5, noun3, adjective6, noun4, pluralNoun4, pluralNoun5, adjective7, adjective8, adjective9);
     
     //creates madlib body once input fields are recognized
-    var madLibBody = 'Ladies and gentlemen, on this ' + adjective1 + ' occasion it is a privelage to address such a/an ' + adjective2 + ' looking group of ' + pluralNoun1 + '. I can tell from your smiling ' + pluralNoun2 + ' that you will support my ' + adjective3 + ' program in the coming election. I promise that, if elected, there will be a/an ' + noun1 + ' in every ' + noun2 + ' and two ' + pluralNoun3 + ' in every garage. I want to warn you about my ' + adjective4 + ' opponent, Mr. ' + personInRoom + '. The man is nothing but a/an ' + adjective5 + ' ' + noun3 + '. He has a ' + adjective6 + ' character and is working ' + noun4 + ' in glove with the criminal element. If elected I promise to eliminate vice. I will keep the ' + pluralNoun4 + ' off the city streets. I will keep the crooks from dipping their ' + pluralNoun5 + ' in the public till. I promise you ' + adjective7 + ' government, ' + adjective8 + ' taxes, and ' + adjective9 + ' schools.';
+    /*var madLibBody = 'Ladies and gentlemen, on this ' + adjective1 + ' occasion it is a privelage to address such a/an ' + adjective2 + ' looking group of ' + pluralNoun1 + '. I can tell from your smiling ' + pluralNoun2 + ' that you will support my ' + adjective3 + ' program in the coming election. I promise that, if elected, there will be a/an ' + noun1 + ' in every ' + noun2 + ' and two ' + pluralNoun3 + ' in every garage. I want to warn you about my ' + adjective4 + ' opponent, Mr. ' + personInRoom + '. The man is nothing but a/an ' + adjective5 + ' ' + noun3 + '. He has a ' + adjective6 + ' character and is working ' + noun4 + ' in glove with the criminal element. If elected I promise to eliminate vice. I will keep the ' + pluralNoun4 + ' off the city streets. I will keep the crooks from dipping their ' + pluralNoun5 + ' in the public till. I promise you ' + adjective7 + ' government, ' + adjective8 + ' taxes, and ' + adjective9 + ' schools.';
     var displayMadLib = document.getElementById('madlib-body');
-    displayMadLib.textContent = madLibBody;
+    displayMadLib.textContent = madLibBody;*/
+console.log(noun3.value);
+    document.getElementById('word-1').innerHTML = adjective1;
+    document.getElementById('word-2').innerHTML = adjective2;
+    document.getElementById('word-3').innerHTML = pluralNoun1;
+    document.getElementById('word-4').innerHTML = pluralNoun2;
+    document.getElementById('word-5').innerHTML = adjective3;
+    document.getElementById('word-6').innerHTML = noun1;
+    document.getElementById('word-7').innerHTML = noun2;
+    document.getElementById('word-8').innerHTML = pluralNoun3;
+    document.getElementById('word-9').innerHTML = adjective4;
+    document.getElementById('word-10').innerHTML = personInRoom;
+    document.getElementById('word-11').innerHTML = adjective5;
+    document.getElementById('word-12').innerHTML = noun3;
+    document.getElementById('word-13').innerHTML = adjective6;
+    document.getElementById('word-14').innerHTML = noun4;
+    document.getElementById('word-15').innerHTML = pluralNoun4;
+    document.getElementById('word-16').innerHTML = pluralNoun5;
+    document.getElementById('word-17').innerHTML = adjective7;
+    document.getElementById('word-18').innerHTML = adjective8;
+    document.getElementById('word-19').innerHTML = adjective9;
 }
 //adds word randomizer functionality
 function randomizer() {
