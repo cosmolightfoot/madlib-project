@@ -27,8 +27,9 @@ function madLib() {
     var displayMadLib = document.getElementById('madlib-body');
     displayMadLib.textContent = madLibBody;
 }
-
+//adds word randomizer functionality
 function randomizer() {
+    //scales random selection from word arrays
     var adjectiveSelector1 = Math.floor(Math.random() * allAdjectives.length);
     var adjectiveSelector2 = Math.floor(Math.random() * allAdjectives.length);
     var adjectiveSelector3 = Math.floor(Math.random() * allAdjectives.length);
@@ -49,7 +50,7 @@ function randomizer() {
     var nounSelector4 = Math.floor(Math.random() * allNouns.length);
     var personInRoomSelector = Math.floor(Math.random() * allNames.length);
     
-
+    //fills in the text input fields with words from the array
     document.getElementById('adjective-1').value = allAdjectives[adjectiveSelector1];
     document.getElementById('adjective-2').value = allAdjectives[adjectiveSelector2];
     document.getElementById('adjective-3').value = allAdjectives[adjectiveSelector3];
@@ -70,11 +71,3 @@ function randomizer() {
     document.getElementById('noun-4').value = allNouns[nounSelector4];
     document.getElementById('person-in-room').value = allNames[personInRoomSelector];
 }
-console.log(allAdjectives[3]);
-console.log(allAdjectives.length);
-console.log(allNouns[3]);
-console.log(allNouns.length);
-console.log(allPluralNouns.length);
-console.log(allPluralNouns[3]);
-//madLib();
-//randomizer();
