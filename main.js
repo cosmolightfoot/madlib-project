@@ -29,48 +29,52 @@ function madLib() {
 }
 
 function randomizer() {
-    var adjectiveSelector1 = Math.floor(Math.random() * 403);
-    var adjectiveSelector2 = Math.floor(Math.random() * 100);
-    var adjectiveSelector3 = Math.floor(Math.random() * 100);
-    var adjectiveSelector4 = Math.floor(Math.random() * 100);
-    var adjectiveSelector5 = Math.floor(Math.random() * 100);
-    var adjectiveSelector6 = Math.floor(Math.random() * 100);
-    var adjectiveSelector7 = Math.floor(Math.random() * 100);
-    var adjectiveSelector8 = Math.floor(Math.random() * 100);
-    var adjectiveSelector9 = Math.floor(Math.random() * 100);
-    var pluralNounSelector1= Math.floor(Math.random() * 100);
-    var pluralNounSelector2= Math.floor(Math.random() * 100);
-    var pluralNounSelector3 = Math.floor(Math.random() * 100);
-    var pluralNounSelector4 = Math.floor(Math.random() * 100);
-    var pluralNounSelector5 = Math.floor(Math.random() * 100);
-    var nounSelector1 = Math.floor(Math.random() * 100);
-    var nounSelector2 = Math.floor(Math.random() * 100);
-    var nounSelector3 = Math.floor(Math.random() * 100);
-    var nounSelector4 = Math.floor(Math.random() * 100);
+    var adjectiveSelector1 = Math.floor(Math.random() * allAdjectives.length);
+    var adjectiveSelector2 = Math.floor(Math.random() * allAdjectives.length);
+    var adjectiveSelector3 = Math.floor(Math.random() * allAdjectives.length);
+    var adjectiveSelector4 = Math.floor(Math.random() * allAdjectives.length);
+    var adjectiveSelector5 = Math.floor(Math.random() * allAdjectives.length);
+    var adjectiveSelector6 = Math.floor(Math.random() * allAdjectives.length);
+    var adjectiveSelector7 = Math.floor(Math.random() * allAdjectives.length);
+    var adjectiveSelector8 = Math.floor(Math.random() * allAdjectives.length);
+    var adjectiveSelector9 = Math.floor(Math.random() * allAdjectives.length);
+    var pluralNounSelector1= Math.floor(Math.random() * allPluralNouns.length);
+    var pluralNounSelector2= Math.floor(Math.random() * allPluralNouns.length);
+    var pluralNounSelector3 = Math.floor(Math.random() * allPluralNouns.length);
+    var pluralNounSelector4 = Math.floor(Math.random() * allPluralNouns.length);
+    var pluralNounSelector5 = Math.floor(Math.random() * allPluralNouns.length);
+    var nounSelector1 = Math.floor(Math.random() * allNouns.length);
+    var nounSelector2 = Math.floor(Math.random() * allNouns.length);
+    var nounSelector3 = Math.floor(Math.random() * allNouns.length);
+    var nounSelector4 = Math.floor(Math.random() * allNouns.length);
     var personInRoomSelector = Math.floor(Math.random() * 100);
     
 
     document.getElementById('adjective-1').value = allAdjectives[adjectiveSelector1];
-    document.getElementById('adjective-2').value = 'testing 123';
-    document.getElementById('plural-noun-1').value = 'testing 123';
-    document.getElementById('plural-noun-2').value = 'testing 123';
-    document.getElementById('adjective-3').value = 'testing 123';
-    document.getElementById('noun-1').value = 'testing 123';
-    document.getElementById('noun-2').value = 'testing 123';
-    document.getElementById('plural-noun-3').value = 'testing 123';
-    document.getElementById('adjective-4').value = 'testing 123';
+    document.getElementById('adjective-2').value = allAdjectives[adjectiveSelector2];
+    document.getElementById('adjective-3').value = allAdjectives[adjectiveSelector3];
+    document.getElementById('adjective-4').value = allAdjectives[adjectiveSelector4];
+    document.getElementById('adjective-5').value = allAdjectives[adjectiveSelector5];
+    document.getElementById('adjective-6').value = allAdjectives[adjectiveSelector6]
+    document.getElementById('adjective-7').value = allAdjectives[adjectiveSelector7];
+    document.getElementById('adjective-8').value = allAdjectives[adjectiveSelector8];
+    document.getElementById('adjective-9').value = allAdjectives[adjectiveSelector9];
+    document.getElementById('plural-noun-1').value = allPluralNouns[pluralNounSelector1];
+    document.getElementById('plural-noun-2').value = allPluralNouns[pluralNounSelector2];
+    document.getElementById('plural-noun-3').value = allPluralNouns[pluralNounSelector3];
+    document.getElementById('plural-noun-5').value = allPluralNouns[pluralNounSelector4];
+    document.getElementById('plural-noun-4').value = allPluralNouns[pluralNounSelector5];
+    document.getElementById('noun-1').value = allNouns[nounSelector1];
+    document.getElementById('noun-2').value = allNouns[nounSelector2];
+    document.getElementById('noun-3').value = allNouns[nounSelector3];
+    document.getElementById('noun-4').value = allNouns[nounSelector4];
     document.getElementById('person-in-room').value = 'testing 123';
-    document.getElementById('adjective-5').value = 'testing 123';
-    document.getElementById('noun-3').value = 'testing 123';
-    document.getElementById('adjective-6').value = 'testing 123'
-    document.getElementById('noun-4').value = 'testing 123';
-    document.getElementById('plural-noun-4').value = 'testing 123';
-    document.getElementById('plural-noun-5').value = 'testing 123';
-    document.getElementById('adjective-7').value = 'testing 123';
-    document.getElementById('adjective-8').value = 'testing 123';
-    document.getElementById('adjective-9').value = 'testing 123';
 }
 console.log(allAdjectives[3]);
 console.log(allAdjectives.length);
+console.log(allNouns[3]);
+console.log(allNouns.length);
+console.log(allPluralNouns.length);
+console.log(allPluralNouns[3]);
 //madLib();
 //randomizer();
